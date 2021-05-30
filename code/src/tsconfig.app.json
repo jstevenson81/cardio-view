@@ -3,20 +3,17 @@
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
-    "lib": [
-      "es2016",
-      "dom"
-    ],
+    "lib": ["es2016", "dom"],
     "outDir": "../out-tsc/app",
-    "module": "es2015",
+    "module": "esnext",
+    "target": "esnext",
     "baseUrl": "",
     "types": []
   },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["test.ts", "**/*.spec.ts"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "preserveWhitespaces": true
+  }
 }
