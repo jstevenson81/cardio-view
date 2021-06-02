@@ -26,14 +26,24 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/theme/style.default.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/js-cookie/src/js.cookie.js",
+              "src/assets/vendor/chart.js/Chart.min.js",
+              "src/assets/js/charts-defaults.js",
+              "src/assets/js/charts-home.js",
+              "src/assets/js/theme.js",
+              "src/assets/vendor/prismjs/prism.js",
+              "src/assets/vendor/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js",
+              "src/assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js",
+              "src/assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,13 +104,8 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
